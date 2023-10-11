@@ -67,7 +67,7 @@ document.querySelector('.tecla_tom').onclick = tocaSomTom;
 
 //listaDeTeclas[0].onclick = tocaSomPom;
 
-function tocaSomPom () {
+/*function tocaSomPom () {
   document.querySelector('#som_tecla_pom').play();
 }
 
@@ -81,4 +81,4 @@ while (contador < listaDeTeclas.length) {
   contador = contador + 1; //então conta
 
   console.log(contador);//imprimir o contador várias vezes
-}
+}*/
