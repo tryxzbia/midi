@@ -63,27 +63,22 @@ function tocaSomTom () {
 document.querySelector('.tecla_tom').onclick = tocaSomTom;
 */
 
-function tocaSomPom () {
-  document.querySelector('#som_tecla_pom').play();
-}
-
 //const listaDeTeclas = document.querySelectorAll('.tecla');
 
 //listaDeTeclas[0].onclick = tocaSomPom;
 
-//Automatizando a lista - adicionar a estrutura de repetição while.Próxima aula
+function tocaSomPom () {
+  document.querySelector('#som_tecla_pom').play();
+}
 
+const listaDeTeclas = document.querySelectorAll('.tecla');
 
+let contador = 0; //loop infinito então
 
+while (contador < listaDeTeclas.length) {
+  listaDeTeclas[contador].onclick = tocaSomPom;
 
+  contador = contador + 1; //então conta
 
-
-
-
-
-
-
-//Declarar e chamar a função, executar o som através do play
-/*
-querySelector para selecionar elementos
-concede o acesso ao código, atribuir para tocar o som*/
+  console.log(contador);//imprimir o contador várias vezes
+}
